@@ -1,0 +1,19 @@
+<p-table [value]="products" styleClass="p-datatable-gridlines">
+  <ng-template pTemplate="caption">
+    Paises de Latinoamerica
+  </ng-template>
+  <ng-template pTemplate="header">
+    <tr>
+      <th>ID</th>
+      <th>Pais</th>
+      <th>Capital</th>
+      <th>Habitantes</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-product>
+    <tr>
+      <td>{{product.code}}</td>
+      <td>{{product.name}}</td>
+      <td>{{product.category}}</td>
+      <td>{{product.quantity}}</td>
+    </tr>
